@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Lato;
+    src: url(Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-bold;
+    src: url(Lato-Black.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+}
+
+header {
+    height: 75px;
+    background-color: #222;
+}
+
+header .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.header_logo a {
+    margin-right: 41px;
+}
+
+.header_menu a {
+    margin-right: 33px
+}
+
+.content_top {
+    background-color: #F1E4E6;
+    align-items: center;
+    height: 764px;
+}
+
+.content_top .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: url(img/bg_man.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    height: inherit;
+    position: relative;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    min-width: 405px;
+    position: absolute;
+    left: 54%;
+    top: 47.7%;
+}
+
+.heading_top {
+    font-family: Lato-bold;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.heading_bottom {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+#fashion {
+    color: #F16D7F;
+}
+
+{}
