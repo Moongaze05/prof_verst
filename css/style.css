@@ -190,9 +190,30 @@ span.bottom_text {
     height: 100%;
 }
 
+.content_products_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 96px;
+}
+
+.content_products_title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.content_products_txt {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-top: 6px;
+}
+
 .content_products .container {
     width: 1140px;
-    margin: 69px auto;
+    margin: 48px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
