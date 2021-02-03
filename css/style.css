@@ -35,38 +35,21 @@ header .container {
     margin-right: 33px
 }
 
-
-/* 
-.header_menu_hover {
-    display: none;
-    height: 764px;
-} */
-
-
-/* img.header_menu_hover:hover {
-    display: unset;
-} */
-
-
-/* 
-.header_menu_hover_background {
-    /* content: ''; */
-
-
-/* height: inherit;
-    width: 85.625%;
-    background-color: rgb(0, 0, 0, 0.5);
-}
-
-.header_menu_hover_menu {
-    width: 14.375%;
-} */
-
 .content_top {
     background-color: #F1E4E6;
     align-items: center;
     height: 764px;
     text-transform: uppercase;
+}
+
+.menu_hover {
+    display: none;
+}
+
+.header_menu_hover:hover .menu_hover {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
 }
 
 .content_top .container {
@@ -77,6 +60,7 @@ header .container {
     background-repeat: no-repeat;
     height: inherit;
     position: relative;
+    background-size: 60%;
 }
 
 .heading {
@@ -613,4 +597,109 @@ span.bottom_text {
 .catalog_page_link:hover {
     background-color: #d6d1d1;
     color: white;
+}
+
+
+/* PRODUCT PAGE */
+
+.content_view {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_view_button {
+    padding: 10px 15px;
+    border: none;
+    fill: black;
+    background-color: rgba(60, 60, 60, 0.15);
+}
+
+.content_view_button:active {
+    fill: #F16D7F;
+    border: none;
+}
+
+.content_info_products .container {
+    width: 641px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 128px;
+}
+
+.women_collection {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #EF5B70;
+    border: transparent;
+    margin-top: 64px;
+}
+
+.women_collection::before {
+    content: '';
+    background-image: url(img/women_collection_border.svg);
+}
+
+.moschino {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 48px;
+}
+
+.moschino_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+.content_info_price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    margin-bottom: 64px;
+}
+
+hr {
+    width: inherit;
+    margin-bottom: 64px;
+}
+
+.cart_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    border-color: #F26376;
+    border-style: solid;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    background-color: transparent;
+    padding: 10px 30px;
+    fill: #F26376;
+    margin-top: 48px;
+}
+
+.cart_btn:active {
+    background-color: #F16D7F;
+    /* outline: 1px solid #F26376; */
+    border-color: #F26376;
+    color: white;
+    fill: white;
 }
