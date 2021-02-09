@@ -8,6 +8,11 @@
     src: url(fonts/Lato-Black.ttf)
 }
 
+@font-face {
+    font-family: Lato-light;
+    src: url(fonts/Lato-Light.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -951,4 +956,134 @@ button.proceed:hover {
 
 button.proceed:active {
     background-color: #EF5B70;
+}
+
+
+/* REGISTRATION PAGE */
+
+.content_registration {
+    height: 150px;
+    background-color: #F8F3F4;
+}
+
+.content_registration .container {
+    width: 1140px;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.registration {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.registration_form {
+    display: flex;
+    flex-direction: row;
+}
+
+.registration_form .container {
+    width: 1140px;
+    margin: 64px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.registration_fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 128px;
+}
+
+.registration_form .your_name_login_details {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+input.registration_input {
+    border: 1px solid #A4A4A4;
+    width: 360px;
+    height: 45px;
+    margin-top: 20px;
+    padding-left: 17px;
+}
+
+input.registration_input::placeholder {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1
+}
+
+.input_radio {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.paragraph_form {
+    max-width: 360px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.join_now {
+    width: 160px;
+    padding: 17px 30px;
+    background-color: #F16D7F;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.join_now:hover {
+    background-color: #EF5B70;
+}
+
+.join_now:active {
+    background-color: #F26376;
+}
+
+.loyalty {
+    display: flex;
+    flex-direction: column;
+    font-family: Lato-light;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.loyalty_heading {
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.loyalty_txt {
+    max-width: 800px;
+    margin-bottom: 21px;
+}
+
+.loyalty_adv {
+    list-style: none;
+    list-style-image: url(img/checkmark_reg.svg);
+}
+
+.loyalty_adv_li {
+    margin-bottom: 16px;
 }
