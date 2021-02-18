@@ -654,6 +654,9 @@ span.bottom_text {
     padding: 15px;
     background: #F16D7F;
     color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .subscribing_form_btn:hover {
@@ -744,8 +747,8 @@ span.bottom_text {
     text-transform: uppercase;
     /* display: flex;
     flex-direction: row; */
-    /* align-items: center;
-    justify-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
     margin-top: 96px;
     max-width: 1140px;
     margin: 96px auto 0;
