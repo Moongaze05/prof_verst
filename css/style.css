@@ -654,6 +654,9 @@ span.bottom_text {
     padding: 15px;
     background: #F16D7F;
     color: white;
+}
+
+input[type='submit'] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
