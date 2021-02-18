@@ -116,6 +116,14 @@ header .header_logo a {
     left: 170px;
 }
 
+input#menu-list-close-btn[type=checkbox] {
+    display: none;
+}
+
+.menu-list-close-btn:checked {
+    display: none;
+}
+
 .menu-list-close-btn::before,
 .menu-list-close-btn::after {
     content: "";
@@ -648,6 +656,12 @@ span.bottom_text {
     color: white;
 }
 
+input[type='submit'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .subscribing_form_btn:hover {
     background: #E05C6E;
 }
@@ -736,8 +750,8 @@ span.bottom_text {
     text-transform: uppercase;
     /* display: flex;
     flex-direction: row; */
-    /* align-items: center;
-    justify-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
     margin-top: 96px;
     max-width: 1140px;
     margin: 96px auto 0;
@@ -840,7 +854,7 @@ span.bottom_text {
 }
 
 .content_info_products .container {
-    width: 641px;
+    max-width: 641px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1313,8 +1327,16 @@ input.registration_input::placeholder {
         min-height: 368px;
     }
     .content_top .container .content_heading {
-        left: 45%;
+        left: 48%;
         top: 40%;
+    }
+    .content_top .container .content_heading_top {
+        font-size: 44px;
+        line-height: 53px;
+    }
+    .content_top .container .content_heading_bottom {
+        font-size: 24px;
+        line-height: 29px;
     }
     .content_mid {
         margin-top: 20px;
@@ -1412,5 +1434,136 @@ input.registration_input::placeholder {
     }
     .loyalty_adv {
         padding-left: 22px;
+    }
+}
+
+@media (max-width:480px) {
+    /* INDEX PAGE */
+    /* INDEX PAGE */
+    /* INDEX PAGE */
+    .header_menu_user {
+        display: none;
+    }
+    .header_menu_cart {
+        display: none;
+    }
+    .content_top .container {
+        background-image: none;
+    }
+    .content_top .container .content_heading {
+        min-width: auto;
+        left: 20%;
+    }
+    .content_top .container .content_heading_top {
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .content_top .container .content_heading_bottom {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .content_mid_top {
+        align-content: center;
+        flex-direction: column;
+    }
+    .content_mid_top_card {
+        max-width: 343px;
+        max-height: 247px;
+        margin-bottom: 32px;
+    }
+    .content_mid_top_card.third {
+        margin-bottom: 0px;
+    }
+    .content_products .container {
+        align-items: center;
+        flex-direction: column;
+        margin: 48px 8px;
+    }
+    .products_btn {
+        margin-left: 0;
+    }
+    .page_footer .container {
+        flex-direction: column-reverse;
+    }
+    .page_footer_socials {
+        padding-top: 15px;
+    }
+    /* CATALOG PAGE */
+    /* CATALOG PAGE */
+    /* CATALOG PAGE */
+    .content_heading_catalog .container {
+        flex-direction: column;
+        align-items: center;
+        align-self: unset;
+        justify-content: space-evenly;
+    }
+    .catalog_filter_select {
+        padding: 8px;
+    }
+    /* PRODUCT PAGE */
+    /* PRODUCT PAGE */
+    /* PRODUCT PAGE */
+    .content_view img {
+        width: 77vw;
+        height: auto;
+    }
+    /* CART PAGE */
+    /* CART PAGE */
+    /* CART PAGE */
+    .content_shopping_cart .container {
+        justify-content: center;
+    }
+    .content_order .container {
+        margin: 50px auto;
+    }
+    .content_order_cards {
+        align-items: center;
+    }
+    .content_order_card {
+        width: 360px;
+    }
+    .content_order_card img {
+        width: 30vw;
+        height: 25vh;
+    }
+    .content_order_card_info {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .content_order_card_info .heading {
+        font-size: 16px;
+        line-height: 19px;
+        max-width: 140px;
+        margin-bottom: 14px;
+    }
+    .content_order_card_info .txt {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .content_order_btn {
+        margin: 0 5px;
+        padding: 16px 16px;
+    }
+    .content_order_forms {
+        flex-direction: column;
+    }
+    .content_order_forms form {
+        margin-bottom: 48px;
+    }
+    /* REGISTRATION PAGE */
+    /* REGISTRATION PAGE */
+    /* REGISTRATION PAGE */
+    .content_registration .container {
+        justify-content: center;
+    }
+    .registration_form .container {
+        flex-direction: column;
+    }
+    .registration_form .container .loyalty {
+        padding-left: 10px;
+        margin-top: 40px;
+    }
+    .registration_form .container .loyalty .loyalty_adv {
+        padding-left: 30px;
     }
 }
