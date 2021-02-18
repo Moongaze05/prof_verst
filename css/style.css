@@ -1523,13 +1523,18 @@ input.registration_input::placeholder {
         width: 360px;
     }
     .content_order_card img {
-        width: 30vh;
+        width: 30vw;
         height: auto;
+    }
+    .content_order_card_info {
+        margin-left: 10px;
+        margin-top: 10px;
     }
     .content_order_card_info .heading {
         font-size: 16px;
         line-height: 19px;
-        width: 140px;
+        max-width: 140px;
+        margin-bottom: 14px;
     }
     .content_order_card_info .txt {
         font-size: 14px;
