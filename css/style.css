@@ -1327,7 +1327,7 @@ input.registration_input::placeholder {
         min-height: 368px;
     }
     .content_top .container .content_heading {
-        left: 48%;
+        left: 47%;
         top: 40%;
     }
     .content_top .container .content_heading_top {
@@ -1507,6 +1507,9 @@ input.registration_input::placeholder {
         width: 77vw;
         height: auto;
     }
+    hr.product {
+        display: none;
+    }
     /* CART PAGE */
     /* CART PAGE */
     /* CART PAGE */
@@ -1524,7 +1527,7 @@ input.registration_input::placeholder {
     }
     .content_order_card img {
         width: 30vw;
-        height: 25vh;
+        height: auto;
     }
     .content_order_card_info {
         margin-left: 10px;
@@ -1558,6 +1561,9 @@ input.registration_input::placeholder {
     }
     .registration_form .container {
         flex-direction: column;
+    }
+    input.registration_input {
+        max-width: 330px;
     }
     .registration_form .container .loyalty {
         padding-left: 10px;
