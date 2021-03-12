@@ -1527,7 +1527,7 @@ input.registration_input::placeholder {
     }
     .content_order_card img {
         width: 30vw;
-        height: auto;
+        height: 25vh;
     }
     .content_order_card_info {
         margin-left: 10px;
